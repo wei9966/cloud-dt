@@ -1,0 +1,11 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: cloud-goods-01
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8964/eureka/

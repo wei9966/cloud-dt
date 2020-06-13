@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      label: master
+#      uri: http://localhost:9100
+#      name: cloud-goods-01
+      discovery:
+        service-id: CLOUD-CONFIG-01
+        enabled: true
+  application:
+    name: cloud-goods-01
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8964/eureka/

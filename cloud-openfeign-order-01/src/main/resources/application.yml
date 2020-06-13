@@ -1,0 +1,39 @@
+#server:
+#  port: 80
+#spring:
+#  application:
+#    name: cloud-order-01
+#  mail:
+#           default-encoding: UTF-8
+#           host: smtp.qq.com
+#           username: yijinghuanqqle9966@qq.com
+#           password: nkvnfwkemliibeje
+#           properties:
+#             mail.smtp.auth: true
+#             mail.smtp.starttls.enable: true
+#             mail.smtp.starttls.required: true
+#             mail.smtp.socketFactory.port: 465
+#             mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+#             mail.smtp.socketFactory.fallback: false
+#           port: 465
+#  redis:
+#    port: 6379
+#    host: 192.168.56.10
+#    database: 0
+#    timeout: 3000
+#  zipkin:
+#    base-url: http://192.168.56.10:9411/
+#eureka:
+#  client:
+#    register-with-eureka: true #是否将自己注册进注册中心
+#    fetch-registry: true
+#    serviceUrl:
+#        defaultZone: http://localhost:8964/eureka
+#feign:
+#  hystrix:
+#    enabled: true
+#  client:
+#      config:
+#        default:
+#          connectTimeout: 3000
+#          readTimeout: 3000

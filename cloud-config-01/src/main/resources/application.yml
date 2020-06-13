@@ -1,0 +1,16 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: cloud-config-01
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/wei_bin_9966/cloud-config
+          clone-on-start: false
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8964/eureka/

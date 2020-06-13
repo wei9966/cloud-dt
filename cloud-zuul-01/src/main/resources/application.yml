@@ -1,0 +1,19 @@
+
+
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8964/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  application:
+    name: cloud-zuul-01
+zuul:
+  routes:
+    CLOUD-ORDER-01: /orders/**
+  ignored-patterns: /*-order-01/**
+  sensitive-headers:
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-common" />
+        <module name="cloud-config-01" />
+        <module name="cloud-eureka-01" />
+        <module name="cloud-goods-01" />
+        <module name="cloud-goods-hystrix-01" />
+        <module name="cloud-openfeign-order-01" />
+        <module name="cloud-order-01" />
+        <module name="cloud-zuul-01" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
